@@ -14,6 +14,7 @@ import org.genedb.querying.history.HistoryManager;
 import org.genedb.querying.history.QueryHistoryItem;
 import org.genedb.querying.tmpquery.GeneSummary;
 import org.genedb.querying.tmpquery.IdsToGeneSummaryQuery;
+import org.genedb.querying.tmpquery.MotifQuery;
 import org.genedb.querying.tmpquery.QuickSearchQuery;
 import org.genedb.querying.tmpquery.SuggestQuery;
 import org.genedb.util.Pair;
@@ -233,6 +234,13 @@ public class QueryController extends AbstractGeneDBFormController{
         	logger.info("Fetching quick search taxons");
         	model.addAttribute("taxonGroup", quickSearchQuery.getQuickSearchQueryResults().getTaxonGroup());
         }
+
+    	if (queryName.equals("motif")) {
+    		MotifQuery motifQuery = (MotifQuery) query;
+    		logger.info("motif query, let's get motif results for " + bounds.page + " " + bounds.length);
+    		Map motifs = motifQuery.getMotifResults(bounds.page, bounds.length);
+    		model.addAttribute("motifs", motifs);
+    	}
     	
     	if (results.size() == 1) {
     		
@@ -267,10 +275,21 @@ public class QueryController extends AbstractGeneDBFormController{
 			model.addAttribute("suggestions", sResults);
 			
         }
+    	
         
 		return "search/" + queryName;
         
 
+    }
+    
+    private List<GeneSummary> motifSummaries (MotifQuery query, List<String> ids) throws QueryException {
+    	IdsToGeneSummaryQuery idsToGeneSummary = (IdsToGeneSummaryQuery) queryFactory.retrieveQuery("idsToGeneSummary", NumericQueryVisibility.PRIVATE);
+    	idsToGeneSummary.setIds(ids);
+    	List<GeneSummary> summaries = idsToGeneSummary.getResultsSummaries();
+    	for (GeneSummary summary : summaries) {
+    		logger.info(summary.getDisplayId());
+    	}
+    	return summaries;
     }
     
     private List<GeneSummary> summaries (List<String> ids) throws QueryException {

@@ -10,7 +10,6 @@
 
 
 
-
 <c:if test="${not empty resultsSize}">
     <div id="col-2-1">
         <c:if test="${isMaxResultsReached}">
@@ -45,7 +44,18 @@
                  </c:if>
                 
             </display:column>
-
+            
+            <c:if test="${motifs != null}">
+                <display:column title="Match">
+                    <c:out value='${motifs[row.displayId].start}'/>-<c:out value='${motifs[row.displayId].end}'/>
+                </display:column>
+                <display:column title="Motif">
+                    <div style="text-align:center;font-family:monospace;word-wrap: break-word;width:430px;"> 
+                        <c:out value='${motifs[row.displayId].pre}'/><span style="color:#AB2219;"><c:out value='${motifs[row.displayId].match}'/></span><c:out value='${motifs[row.displayId].post}'/>
+                   </div> 
+                </display:column>
+            </c:if> 
+            
         </display:table>
     </div>
 </c:if>
