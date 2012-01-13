@@ -60,6 +60,19 @@
 
 <div id="col-1-2">
 
+<h1>Events</h1>
+<div class="baby-blue-top"></div>
+<div class="baby-blue">
+<p>
+<a href="http://www.wellcome.ac.uk/Education-resources/Courses-and-conferences/Advanced-Courses-and-Scientific-Conferences/Workshops/WTVM050772.htm">Working with Parasite Database Resources Workshop</a><br>
+21-26 October 2012<br>
+Wellcome Trust Genome Campus, Hinxton, Cambridge, UK<br>
+Deadline for applications: 29 June 2012
+</p>
+</div>
+<div class="baby-blue-bot"></div>
+
+
 <h1>News</h1>
 <div class="light-grey-top"></div>
 <div class="light-grey">
