@@ -11,9 +11,9 @@
 
 <format:genePageSection>
 
-<div style="width:750px">
-
 <div id="surface_phylome"></div>
+
+<div style="width:750px">
 
 The taxonomic distribution of gene families with putative cell-surface roles, displayed in a Venn diagram. Each circle represents a family. The 
 label in each circle refers to the description key, while size reflects the number of genes it contains; for large families the absolute number 
@@ -60,7 +60,7 @@ $(function(){
     //}
     
 	if ($.browser.safari) {
-		$('#surface_phylome').html("<iframe src='/cgi-bin/surface_phylome/surface_phylome.pl' frameborder=0 height='900' width='800'></iframe> ");
+		$('#surface_phylome').html("<iframe src='/cgi-bin/surface_phylome/surface_phylome.pl' frameborder=0 height='920' width='920'></iframe> ");
 	} else  {
 		$('#surface_phylome').load('/cgi-bin/surface_phylome/surface_phylome.pl');
 	}
