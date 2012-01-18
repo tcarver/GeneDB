@@ -9,9 +9,9 @@
     The African Trypanosome Cell Surface Phylome
 </h1>
 
-<format:genePageSection>
-
 <div id="surface_phylome"></div>
+
+<format:genePageSection>
 
 <div style="width:750px">
 
