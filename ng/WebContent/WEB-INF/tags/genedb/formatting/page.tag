@@ -75,11 +75,11 @@
 </li>
 <li class="has-sub"><a href="">Browse</a>
 <ul class="sub-menu">
-<li><a href="<misc:url value="/category/genedb_products"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Products</a></li>
-<li><a href="<misc:url value="/category/ControlledCuration"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Controlled Curation</a></li>
-<li><a href="<misc:url value="/category/biological_process"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Biological Process</a></li>
-<li><a href="<misc:url value="/category/cellular_component"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Cellular Component</a></li>
-<li><a href="<misc:url value="/category/molecular_function"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Molecular Function</a></li>
+<li><a href="<misc:url value="/category?genedb_products"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Products</a></li>
+<li><a href="<misc:url value="/category?ControlledCuration"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Controlled Curation</a></li>
+<li><a href="<misc:url value="/category?biological_process"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Biological Process</a></li>
+<li><a href="<misc:url value="/category?cellular_component"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Cellular Component</a></li>
+<li><a href="<misc:url value="/category?molecular_function"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Molecular Function</a></li>
 </ul>
 </li>
 <li class="has-sub"><a href="">Tools</a>
