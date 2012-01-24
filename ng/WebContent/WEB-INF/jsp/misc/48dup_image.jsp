@@ -338,88 +338,169 @@ non-synonymous vs. synonymous sites) and red (w &gt; 1).
 <area shape="rect" coords="3545,534,3564,552" href="<misc:url value="/gene" />/Tb927.8.8350">
 <area shape="rect" coords="3592,534,3603,552" href="<misc:url value="/gene" />/Tb927.8.8360">
 <!-- Red top row -->
-<area shape="poly" coords="490,255,490,249,479,249,500,229,522,249,511,249,511,256,499,247" href="http://old.genedb.org/genedb/tryp/48dup_tableS4.jsp">
-<area shape="poly" coords="551,257,551,251,539,249,564,231,589,250,577,251,577,259,564,249" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="547,624,596,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="606,624,628,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="649,624,690,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1051,624,1068,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1203,624,1225,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1309,624,1323,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="1590,254,1590,248,1583,246,1598,228,1614,247,1606,248,1606,257,1598,249" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="2012,624,2059,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="2114,624,2143,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="2502,255,2502,246,2490,244,2514,227,2537,246,2526,245,2527,256,2513,247" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="2644,226,2643,221,2622,219,2662,200,2704,220,2684,220,2684,226,2664,217" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="2806,624,2836,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="3135,624,3174,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="3482,624,3526,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
+<area shape="poly" coords="490,255,490,249,479,249,500,229,522,249,511,249,511,256,499,247" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="551,257,551,251,539,249,564,231,589,250,577,251,577,259,564,249" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="547,624,596,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="606,624,628,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="649,624,690,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1051,624,1068,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1203,624,1225,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1309,624,1323,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="1590,254,1590,248,1583,246,1598,228,1614,247,1606,248,1606,257,1598,249" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="2012,624,2059,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="2114,624,2143,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="2502,255,2502,246,2490,244,2514,227,2537,246,2526,245,2527,256,2513,247" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="2644,226,2643,221,2622,219,2662,200,2704,220,2684,220,2684,226,2664,217" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="2806,624,2836,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="3135,624,3174,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="3482,624,3526,661" href="<misc:url value="/includes/docs/TableS4.doc" />">
 <!-- Red bottom row -->
-<area shape="poly" coords="202,659,214,660,216,654,229,663,244,654,244,660,256,659,230,679" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="388,658,406,660,406,654,423,663,441,655,442,658,459,659,423,678" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="642,246,691,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="722,246,744,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="759,246,801,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1017,246,1037,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1150,246,1171,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1258,246,1279,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="1792,660,1798,660,1800,654,1807,661,1815,653,1815,661,1820,661,1808,680" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="1942,246,1976,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="2035,246,2058,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="2411,659,2422,659,2423,652,2435,661,2446,653,2446,660,2458,659,2434,679" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="poly" coords="2541,658,2570,658,2570,654,2598,662,2627,653,2627,658,2655,657,2598,677" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="2732,246,2758,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="3092,246,3124,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
-<area shape="rect" coords="3475,246,3530,285" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS4" />">
+<area shape="poly" coords="202,659,214,660,216,654,229,663,244,654,244,660,256,659,230,679" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="388,658,406,660,406,654,423,663,441,655,442,658,459,659,423,678" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="642,246,691,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="722,246,744,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="759,246,801,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1017,246,1037,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1150,246,1171,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1258,246,1279,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="1792,660,1798,660,1800,654,1807,661,1815,653,1815,661,1820,661,1808,680" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="1942,246,1976,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="2035,246,2058,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="2411,659,2422,659,2423,652,2435,661,2446,653,2446,660,2458,659,2434,679" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="poly" coords="2541,658,2570,658,2570,654,2598,662,2627,653,2627,658,2655,657,2598,677" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="2732,246,2758,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="3092,246,3124,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
+<area shape="rect" coords="3475,246,3530,285" href="<misc:url value="/includes/docs/TableS4.doc" />">
 
 <!-- Dark blue -->
-<area shape="poly" coords="1988,256,1988,250,1974,247,2004,231,2036,247,2021,248,2021,256,20054,248" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS3" />">
-<area shape="poly" coords="2642,258,2620,251,2661,234,2702,250,2682,252,2682,258,2661,249" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS3" />">
-<area shape="poly" coords="1951,655,1965,664,1980,656,1980,666,1993,664,1964,683,1938,664,1952,667,1951,655" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS3" />">
-<area shape="poly" coords="2941,655,2947,663,2952,653,2954,663,2959,661,2947,679,2934,663,2940,651,2947,662" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS3" />">
+<area shape="poly" coords="1988,256,1988,250,1974,247,2004,231,2036,247,2021,248,2021,256,20054,248" href="<misc:url value="/includes/docs/TableS3.doc" />">
+<area shape="poly" coords="2642,258,2620,251,2661,234,2702,250,2682,252,2682,258,2661,249" href="<misc:url value="/includes/docs/TableS3.doc" />">
+<area shape="poly" coords="1951,655,1965,664,1980,656,1980,666,1993,664,1964,683,1938,664,1952,667,1951,655" href="<misc:url value="/includes/docs/TableS3.doc" />">
+<area shape="poly" coords="2941,655,2947,663,2952,653,2954,663,2959,661,2947,679,2934,663,2940,651,2947,662" href="<misc:url value="/includes/docs/TableS3.doc" />">
 <!-- Light blue -->
-<area shape="poly" coords="465,282,465,267,458,264,476,248,493,267,484,265,484,284" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="976,281,1004,248" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="poly" coords="1988,281,1989,266,1972,262,2005,248,2035,265,2020,266,2020,283" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="poly" coords="2640,282,2641,265,2621,263,2662,249,2702,265,2681,264,2681,284" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="3367,280,3400,245" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="482,664,507,628" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="poly" coords="1938,644,1951,646,1950,628,1978,627,1980,645,1993,645,1966,664" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="2845,658,2866,623" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="poly" coords="2936,643,2942,645,2941,626,2953,627,2953,645,2961,645,2947,663" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="poly" coords="2959,645,2970,645,2970,625,3002,626,3002,645,3017,643,2985,662" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="3522,657,3537,624" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
-<area shape="rect" coords="3537,657,3581,625" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS2" />">
+<area shape="poly" coords="465,282,465,267,458,264,476,248,493,267,484,265,484,284" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="976,281,1004,248" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="poly" coords="1988,281,1989,266,1972,262,2005,248,2035,265,2020,266,2020,283" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="poly" coords="2640,282,2641,265,2621,263,2662,249,2702,265,2681,264,2681,284" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="3367,280,3400,245" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="482,664,507,628" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="poly" coords="1938,644,1951,646,1950,628,1978,627,1980,645,1993,645,1966,664" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="2845,658,2866,623" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="poly" coords="2936,643,2942,645,2941,626,2953,627,2953,645,2961,645,2947,663" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="poly" coords="2959,645,2970,645,2970,625,3002,626,3002,645,3017,643,2985,662" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="3522,657,3537,624" href="<misc:url value="/includes/docs/TableS2.doc" />">
+<area shape="rect" coords="3537,657,3581,625" href="<misc:url value="/includes/docs/48dup_tableS2" />">
 <!-- Green top row -->
-<area shape="poly" coords="407,283,407,265,384,265,431,246,485,260,459,260,455,266,455,283" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="poly" coords="487,282,488,255,498,248,518,263,509,265,509,282" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="540,282,584,248" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1079,283,1136,247" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1172,282,1216,246" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1329,283,1388,245" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1414,279,1443,246" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1582,281,1609,244" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2330,284,2390,243" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2488,277,2534,243" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="poly" coords="2642,243,2641,234,2618,234,2662,216,2702,234,2683,234,2682,242,2659,233" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2867,279,2899,244" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="3042,283,3094,245" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="3240,281,3292,244" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
+<area shape="poly" coords="407,283,407,265,384,265,431,246,485,260,459,260,455,266,455,283" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="poly" coords="487,282,488,255,498,248,518,263,509,265,509,282" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="540,282,584,248" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1079,283,1136,247" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1172,282,1216,246" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1329,283,1388,245" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1414,279,1443,246" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1582,281,1609,244" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2330,284,2390,243" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2488,277,2534,243" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="poly" coords="2642,243,2641,234,2618,234,2662,216,2702,234,2683,234,2682,242,2659,233" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2867,279,2899,244" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="3042,283,3094,245" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="3240,281,3292,244" href="<misc:url value="/includes/docs/TableS5.doc" />">
 <!-- Green bottom row -->
-<area shape="rect" coords="117,663,200,626" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="201,662,254,624" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="388,662,455,624" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="poly" coords="1143,660,1129,651,1133,645,1131,625,1155,625,1156,643,1168,643" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1223,662,1268,623" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1440,659,1499,624" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1609,663,1640,626" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="1791,660,1818,624" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2212,661,2280,623" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2409,667,2453,633" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="2539,665,2649,623" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="poly" coords="2985,681,2971,663,2978,663,2977,657,2985,662,2991,659,2993,662,3001,661" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
-<area shape="rect" coords="3089,662,3137,623" href="<misc:url value="/Page/organism/Tbruceibrucei927/48dup_tableS5" />">
+<area shape="rect" coords="117,663,200,626" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="201,662,254,624" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="388,662,455,624" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="poly" coords="1143,660,1129,651,1133,645,1131,625,1155,625,1156,643,1168,643" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1223,662,1268,623" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1440,659,1499,624" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1609,663,1640,626" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="1791,660,1818,624" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2212,661,2280,623" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2409,667,2453,633" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="2539,665,2649,623" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="poly" coords="2985,681,2971,663,2978,663,2977,657,2985,662,2991,659,2993,662,3001,661" href="<misc:url value="/includes/docs/TableS5.doc" />">
+<area shape="rect" coords="3089,662,3137,623" href="<misc:url value="/includes/docs/TableS5.doc" />">
 </map>
+
+<h2>Key to shared paralogs (grey):</h2>
+<p>
+1. Tb927.4.5390/Tb927.8.6930	serine/threonine-protein kinase NrkA<br>
+2. Tb927.4.5380/Tb927.8.6940	alcohol dehydrogenase-like<br>
+3. Tb927.4.5370/Tb927.8.6950	dynein light chain 2B<br>
+4. Tb927.4.5360/Tb927.8.6960	hypothetical transmembrane protein<br>
+5. Tb927.4.5350/Tb927.8.6970	3-methylcrotonyl-CoA carboxylase<br>
+6. Tb927.4.5340/Tb927.8.6980	hypothetical protein<br>
+7. Tb927.4.5330/Tb927.8.7060	hypothetical protein<br>
+8. Tb927.4.5320/Tb927.8.7090	hypothetical protein<br>
+9. Tb927.4.5310/Tb927.8.7110	serine/threonine-protein kinase A<br>
+10. Tb927.4.5300/Tb927.8.7140	UDP-GlcNAc-dependent glycosyltransferase<br>
+11. Tb927.4.5230/Tb927.8.7180	hypothetical protein<br>
+12. Tb927.4.5220/Tb927.8.7190	hypothetical protein<br>
+13. Tb927.4.5190/Tb927.8.7210	hypothetical protein<br>
+14. Tb927.4.5180/Tb927.8.7220	protein kinase<br>
+15. Tb927.4.5160/Tb927.8.7230	hypothetical transmembrane protein<br>
+16. Tb927.4.5150/Tb927.8.7240	hypothetical protein<br>
+17. Tb927.4.5140/Tb927.8.7250	hypothetical protein<br>
+18. Tb927.4.5120/Tb927.8.7260	kinetoplast-associated protein<br>
+19. Tb927.4.5100/Tb927.8.7270	hypothetical transmembrane protein<br>
+20. Tb927.4.5050/Tb927.8.7380	dihydrolipoamide dehydrogenase<br>
+21. Tb927.4.5030/Tb927.8.7390	serine/threonine protein phosphatase PP1<br?
+22. Tb927.4.5020/Tb927.8.7400	RNA polymerase IIA largest subunit<br>
+23. Tb927.4.5010/Tb927.8.7410	calreticulin<br>
+24. Tb927.4.5000/Tb927.8.7420	C2 calcium/lipid-binding region<br>
+25. Tb927.4.4990/Tb927.8.7430	ubiquinol-cytochrome C reductase hinge protein<br>
+26. Tb927.4.4970/Tb927.8.7450	myosin heavy chain kinase A<br>
+27. Tb927.4.4960/Tb927.8.7460	metal-ion transporter<br>
+28. Tb927.4.4950/Tb927.8.7470	aldehyde dehydrogenase, WD40 repeat<br>
+29. Tb927.4.4940/Tb927.8.7480	Phosphopantetheine attachment site<br>
+30. Tb927.4.4930/Tb927.8.7490	hypothetical protein<br>
+31. Tb927.4.4920/Tb927.8.7500	hypothetical transmembrane protein<br>
+32. Tb927.4.4910/Tb927.8.7530	3,2-trans-enoyl-CoA isomerase<br>
+33. Tb927.4.4900/Tb927.8.7550	hypothetical protein<br>
+34. Tb927.4.4890/Tb927.8.7560	hypothetical transmembrane protein<br>
+35. Tb927.4.4880/Tb927.8.7580	zinc finger protein, C3HC4 type<br>
+36. Tb927.4.4870/Tb927.8.7600	amino acid transporter<br>
+37. Tb927.4.4810/Tb927.8.7710	hypothetical transmembrane protein<br>
+38. Tb927.4.4790/Tb927.8.7720	hypothetical transmembrane protein<br>
+39. Tb927.4.4740/Tb927.8.7730	longevity-assurance protein<br>
+40. Tb927.4.4730/Tb927.8.7740	amino acid transporter<br>
+41. Tb927.4.4580/Tb927.8.7750	protein kinase<br>
+42. Tb927.4.4570/Tb927.8.7760	hypothetical protein<br>
+43. Tb927.4.4550/Tb927.8.7780	GPI anchor<br>
+44. Tb927.4.4540/Tb927.8.7790	LSD1 zinc finger<br>
+45. Tb927.4.4530/Tb927.8.7800 	hypothetical protein<br>
+46. Tb927.4.4520/Tb927.8.7820	cold-shock protein, DNA-binding<br>
+47. Tb927.4.4500/Tb927.8.7830	hypothetical protein<br>
+48. Tb927.4.4480/Tb927.8.7850	hypothetical protein<br>
+49. Tb927.4.4470/Tb927.8.7860	adenylate cyclase GRESAG 4<br>
+50. Tb927.4.4400/Tb927.8.7950	hypothetical protein<br>
+51. Tb927.4.4380/Tb927.8.7980	V-type H(+)-translocating pyrophosphatase<br>
+52. Tb927.4.4370/Tb927.8.8000	hypothetical protein<br>
+53. Tb927.4.4360/Tb927.8.8020	monoglyceride lipase<br>
+54. Tb927.4.4350/Tb927.8.8030	hypothetical transmembrane protein<br>
+55. Tb927.4.4330/Tb927.8.8040	diadenosine tetraphosphatase<br>
+56. Tb927.4.4310/Tb927.8.8050	hypothetical protein<br>
+57. Tb927.4.4290/Tb927.8.8090	UDP-GlcNAc-dependent glycosyltransferase<br>
+58. Tb927.4.4240/Tb927.8.8070	hypothetical protein<br>
+59. Tb927.4.4220/Tb927.8.8140	small GTP-binding rab protein<br>
+60. Tb927.4.4190/Tb927.8.8150	C2 calcium/lipid-binding region<br>
+61. Tb927.4.4180/Tb927.8.8160	hypothetical protein<br>
+62. Tb927.4.4160/Tb927.8.8170	CheY-like domain<br>
+63. Tb927.4.4150/Tb927.8.8180	hypothetical protein<br>
+64. Tb927.4.4140/Tb927.8.8190	hypothetical protein<br>
+65. Tb927.4.4130/Tb927.8.8200	prefoldin domain<br>
+66. Tb927.4.4120/Tb927.8.8210	hypothetical protein<br>
+67. Tb927.4.4060/Tb927.8.8270	3'5'-cyclic nucleotide phosphodiesterase<br>
+68. Tb927.4.4040/Tb927.8.8280	hypothetical protein<br>
+69. Tb927.4.4020/Tb927.8.8290	amino acid transporter AATP5<br>    
+70. Tb927.4.3970/Tb927.8.8320	hypothetical protein<br>
+71. Tb927.4.3950/Tb927.8.8330	cytoskeleton-associated protein CAP5.5<br>
+72. Tb927.4.3920/Tb927.8.8340	CRAL-TRIO lipid binding domain<br>
+73. Tb927.4.3910/Tb927.8.8350	mitotic centromer-associated kinesin<br>
+74. Tb927.4.3880/Tb927.8.8360	receptor-type adenylate cyclase GRESAG 4<br>
+</p>
 
 </body>
 </html>
+
+
+
