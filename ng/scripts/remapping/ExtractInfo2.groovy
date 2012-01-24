@@ -5,9 +5,9 @@ import java.util.Set;
 import java.util.List;
 
 // This script reads the specified EMBL files and extracts the feature names and locations
-// This data will be used in the next stage to remap the annotation.
+// This data will be used in the next stage to relocate the annotation.
 // Sample usage:
-// (groovy ExtractInfo.groovy L* > mapping.out) >& mapping.out.err
+// (groovy ExtractInfo.groovy *.embl > mapping.out) >& mapping.out.err
 //
 
 public class ExtractInfo {
@@ -37,6 +37,8 @@ public class ExtractInfo {
         boolean seenID = true
         an.eachLine({
 
+	    //System.out.println "It is $it"
+
             if (it ==~ /^FT   \w+\W+.*$/) {
                 if (!seenID) {
                     System.err.println "**** Couldn't find ID in '$lastFeatType' (currently at '$it' ******"
@@ -45,6 +47,7 @@ public class ExtractInfo {
                 g = [:]
                 seenID = false
                 def parts = it.split()
+
                 if (cdsHack && parts[1].equals("CDS")) {
                     g.type = "exon"
                 } else {
@@ -53,8 +56,8 @@ public class ExtractInfo {
                 }
 		lastFeatType = parts[1]
                 String location = parts[2]
-                //System.err.println(location)
-                if (location.contains("complement")) {
+          
+		if (location.contains("complement")) {
                     g.strand = '-'
                     location = location.replace("complement(", "")
                     location = location.substring(0, location.length()-1)
@@ -75,13 +78,16 @@ public class ExtractInfo {
                     g.fmin = locs[0]
                     g.fmax = locs[1]
                 }
+		
             } else {
                 if (it ==~ /^SQ/) {
                     return
                 }
                 if (it ==~ /^FT\W+\/ID=.*$/) {
-                    String s = it.substring(26)
+
+                    String s = it.substring(26)		    
                     String id = s.substring(0, s.length()-1)
+		    
                     if (cdsHack) {
                         id = id.replace('{', ':')
                         id = id.replace('}', '')
@@ -94,6 +100,8 @@ public class ExtractInfo {
                     //    g.id = g.id.replace(":mRNA", ".1");
                     //}
                     if (g.fmax != null && !g.id.contains(",")) {
+
+		      
                        // if (g.type!="repeat_region") {
                             println g.type + '\t' + g.id + '\t' + contigName + '\t'+ g.strand + '\t' + g.fmin + '\t' + g.fmax
                        // }
@@ -109,11 +117,22 @@ public class ExtractInfo {
                               println g.type + '\t' + newId + suffixStrings[i] + '\t' + contigName + '\t' + g.strand + '\t' + g.fmin + '\t' + g.fmax
 			  }
 			} else {
+
 			  String[] locs = g.fmin.split(',');
-                          for (int i in 0..locs.length-1) {
+                          for (int i in 0..locs.length-1) {	
+		      
                               String[] tmp = locs[i].split("\\.\\.")
+			      //Constructing the new ID. Note that these are IDs from UNflattened EMBL files.
+			     
                               String newId = g.id.substring(0, g.id.lastIndexOf(':')) + ':'
-                              String suffix = g.id.substring(g.id.lastIndexOf(':')+1).split(",")[i]
+			      String suffix
+			      if(g.type == "exon"){
+			          suffix = i+1
+			      }else{
+                                  suffix = g.id.substring(g.id.lastIndexOf(':')+1).split(",")[i]
+		              }
+		              
+		
 			      println g.type + '\t' + newId + suffix + '\t' + contigName + '\t' + g.strand + '\t' + tmp[0] + '\t' + tmp[1].split(",")[0]
                           }
 			}

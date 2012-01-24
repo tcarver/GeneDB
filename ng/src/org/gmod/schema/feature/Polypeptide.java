@@ -2,6 +2,7 @@ package org.gmod.schema.feature;
 
 
 import org.genedb.db.analyzers.AllNamesAnalyzer;
+import org.genedb.db.analyzers.AlphaNumericAnalyzer;
 import org.gmod.schema.cfg.FeatureType;
 import org.gmod.schema.mapped.CvTerm;
 import org.gmod.schema.mapped.DbXRef;
@@ -99,7 +100,7 @@ public class Polypeptide extends Region {
     @Transient
     @Field(name = "gene", index = Index.UN_TOKENIZED, store = Store.YES)
     public String getGeneUniqueName() {
-    	logger.warn("Getting gene name");
+    	//logger.warn("Getting gene name");
         AbstractGene gene = getGene();
         if (gene != null) {
         	return gene.getUniqueName();
@@ -183,6 +184,26 @@ public class Polypeptide extends Region {
         }
 
         return domains;
+    }
+    
+    /**
+     * Returns the featurelocs of amino acid features located on the polypeptide.   
+     * 
+     * @param <T> the type of feature, must be a subclass of amino acid feature For example <code>ModifiedAminoAcidFeature.class</code>.
+     * @return a sorted set of featurelocs 
+     */
+    @Transient
+    public <T extends AminoAcid> List<FeatureLoc> getAminoAcidFeatureLocs(Class<T> type) {
+        List<FeatureLoc> aminoAcidFeatureLocs = new ArrayList<FeatureLoc>();
+        
+        for (FeatureLoc domainLoc: this.getFeatureLocsForSrcFeatureId()) {
+            Feature domain = domainLoc.getFeature();
+            if (type.isAssignableFrom(domain.getClass())) {
+                aminoAcidFeatureLocs.add(domainLoc);
+            }
+        }
+        
+        return aminoAcidFeatureLocs;
     }
 
     /**
@@ -346,7 +367,7 @@ public class Polypeptide extends Region {
     @Transient
     @Field(name="signalP", index=Index.UN_TOKENIZED, store=Store.NO)
     public boolean isSignalP() {
-    	logger.warn("Getting signal P");
+    	//logger.warn("Getting signal P");
         if (hasProperty("genedb_misc", "SignalP_prediction")
         || hasProperty("genedb_misc", "signal_peptide_probability")
         || hasProperty("genedb_misc", "signal_anchor_probability")) {
@@ -442,6 +463,19 @@ public class Polypeptide extends Region {
         
         return StringUtils.collectionToDelimitedString(products, " ");
     }
+    
+    @Transient
+    @Analyzer(impl = AlphaNumericAnalyzer.class)
+    @Field(name = "productAlphanumeric", index = Index.TOKENIZED, store = Store.YES)
+    public String getProductsAlphanumeric(){
+        List<String> products = getProducts();
+        if (products == null) {
+            return null;
+        }
+        return StringUtils.collectionToDelimitedString(products, " ");
+    }
+    
+    
 
 
     @Transient
@@ -515,9 +549,10 @@ public class Polypeptide extends Region {
     }
 
     @Transient
-    @Field(index=Index.TOKENIZED, store=Store.NO)
+    @Analyzer(impl = AllNamesAnalyzer.class)
+    @Field(index=Index.TOKENIZED, store=Store.YES)
     public String getPfam(){
-        StringBuilder ret = new StringBuilder();
+        List<String> pfams = new ArrayList<String>();
         for (PolypeptideDomain domain : this.getDomains()) {
             DbXRef dbXRef = domain.getDbXRef();
             if(dbXRef.getDb().getName().equals("Pfam")){
@@ -525,17 +560,28 @@ public class Polypeptide extends Region {
                 String accession = dbXRef.getAccession();
                 String description = dbXRef.getDescription();
                 
-                ret.append(String.format("%s %s ", accession, description));
+                pfams.add(accession);
+                pfams.add(description);
                 
                 if (accession.startsWith("PF")) {
                     String trimmed = accession.replace("PF", "");
-                    ret.append(String.format(" %s Pf:%s Pfam:%s ", trimmed, trimmed, trimmed));
+                    
+                    // we only need the numerical one (as that is what's used in the search)
+                    pfams.add(trimmed);
+                    
+                    //pfams.add(String.format("Pf:%s", trimmed));
+                    //pfams.add(String.format("Pfam:%s", trimmed));
                 }
                 
             }
         }
-        return ret.length() > 0 ? ret.toString() : null;
+        
+        if (pfams.size() == 0) 
+            return null;
+        
+        return StringUtils.collectionToDelimitedString(pfams, " ");
     }
+    
     /**
      * Get a collection of the ProteinMatch features that represent similarities
      * between this polypeptide and another (as defined by a /similarity qualifier

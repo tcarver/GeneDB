@@ -9,11 +9,11 @@
     The African Trypanosome Cell Surface Phylome
 </h1>
 
+<div id="surface_phylome"></div>
+
 <format:genePageSection>
 
 <div style="width:750px">
-
-<div id="surface_phylome"></div>
 
 The taxonomic distribution of gene families with putative cell-surface roles, displayed in a Venn diagram. Each circle represents a family. The 
 label in each circle refers to the description key, while size reflects the number of genes it contains; for large families the absolute number 
@@ -45,7 +45,7 @@ is representative of total diversity in <em>T. cruzi</em>.
 Email Dr Andrew Jackson at the Wellcome Trust Sanger Institute (<a href="mailto:aj4@sanger.ac.uk">aj4@sanger.ac.uk</a>).
 
 <h2>Credit</h2>
-<P>Jackson, et al. (2011). Divergent evolution of antigenic variation in African trypanosomes. Manuscript submitted.</P>
+<P>Jackson, et al. (2012). A cell surface phylome for African trypanosomes. Manuscript submitted.</P>
  
  </div>
 
@@ -60,7 +60,7 @@ $(function(){
     //}
     
 	if ($.browser.safari) {
-		$('#surface_phylome').html("<iframe src='/cgi-bin/surface_phylome/surface_phylome.pl' frameborder=0 height='900' width='800'></iframe> ");
+		$('#surface_phylome').html("<iframe src='/cgi-bin/surface_phylome/surface_phylome.pl' frameborder=0 height='920' width='920'></iframe> ");
 	} else  {
 		$('#surface_phylome').load('/cgi-bin/surface_phylome/surface_phylome.pl');
 	}

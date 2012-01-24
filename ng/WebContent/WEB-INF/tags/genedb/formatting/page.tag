@@ -73,13 +73,13 @@
 </ul>
 <!-- end sub menu -->
 </li>
-<li class="has-sub"><a href="">Browse</a>
+<li class="has-sub"><a href="<misc:url value="/category" />">Browse</a>
 <ul class="sub-menu">
-<li><a href="<misc:url value="/category?genedb_products"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Products</a></li>
-<li><a href="<misc:url value="/category?ControlledCuration"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Controlled Curation</a></li>
-<li><a href="<misc:url value="/category?biological_process"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Biological Process</a></li>
-<li><a href="<misc:url value="/category?cellular_component"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Cellular Component</a></li>
-<li><a href="<misc:url value="/category?molecular_function"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Molecular Function</a></li>
+<li><a href="<misc:url value="/category?category=genedb_products"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Products</a></li>
+<li><a href="<misc:url value="/category?category=ControlledCuration"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Controlled Curation</a></li>
+<li><a href="<misc:url value="/category?category=biological_process"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Biological Process</a></li>
+<li><a href="<misc:url value="/category?category=cellular_component"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Cellular Component</a></li>
+<li><a href="<misc:url value="/category?category=molecular_function"><spring:param name="taxons" value="${taxonNodeName}"/></misc:url>">Molecular Function</a></li>
 </ul>
 </li>
 <li class="has-sub"><a href="">Tools</a>
@@ -114,7 +114,7 @@
 </td>
 
 <td valign="top" align="right">
-<p>Comments/Questions: <a href="mailto:webmaster@genedb.org">Email us</a>
+<p>Comments/Questions: <a id="contact" href="znvygb:trarqo-uryc@fnatre.np.hx">Email us</a>
 <%--
 <a href="<misc:url value="/Feedback" />">Curator/Data</a> or
 <a href="<misc:url value="/Feedback" />">website</a> | Version 4.98</p>
@@ -132,4 +132,5 @@ urchinTracker();
 </script>
 </body>
 </html>
+
 
