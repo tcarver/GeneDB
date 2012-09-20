@@ -384,7 +384,7 @@ public class Polypeptide extends Region {
             if ((residues.length() > 1) && (residues.endsWith("*"))) {
                 // remove any trailing stars
                 int max_index = residues.length() - 1;
-                residues = residues.substring(0, max_index  - 1);
+                residues = residues.substring(0, max_index);
             }
         }
     	//logger.warn("SEQUENCE!" + getResidues());
