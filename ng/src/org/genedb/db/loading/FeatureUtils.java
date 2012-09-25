@@ -47,7 +47,7 @@ public class FeatureUtils implements InitializingBean {
     private CvTerm GO_KEY_EVIDENCE, GO_KEY_QUALIFIER, GO_KEY_ATTRIBUTION,
                    GO_KEY_RESIDUE, GO_KEY_DATE, GENEDB_AUTOCOMMENT;
     private CvTerm PUB_TYPE_UNFETCHED;
-    private Db PMID_DB, GOREF_DB;
+    private Db PMID_DB, GOREF_DB, INTERPRO_DB, PFAM_DB;
     private int NULL_PUB_ID;
 
     public void afterPropertiesSet() {
@@ -55,7 +55,9 @@ public class FeatureUtils implements InitializingBean {
         objectManager.setDaos(generalDao, pubDao, cvDao);
         PMID_DB = objectManager.getExistingDbByName("PMID");
         GOREF_DB = objectManager.getExistingDbByName("GO_REF");
-
+        INTERPRO_DB = objectManager.getExistingDbByName("InterPro");
+        PFAM_DB = objectManager.getExistingDbByName("Pfam");
+        
         GO_KEY_EVIDENCE = cvDao.getExistingCvTermByNameAndCvName("evidence", "genedb_misc");
         GO_KEY_ATTRIBUTION = cvDao.getExistingCvTermByNameAndCvName("attribution", "genedb_misc");
         GO_KEY_RESIDUE = cvDao.getExistingCvTermByNameAndCvName("residue", "genedb_misc");
@@ -116,6 +118,30 @@ public class FeatureUtils implements InitializingBean {
         String accession = ref.substring(1 + ref.indexOf(':')); // Text after first colon, or whole string if no colon
         logger.trace(String.format("Looking for dbxref object with accession number '%s'", accession));
         DbXRef dbXRef = generalDao.getDbXRefByDbAndAcc(GOREF_DB, accession); //objectManager.getDbXRef("PUBMED", accession);
+        if (dbXRef == null) {
+            logger.trace(String.format("Could not find DbXRef for GO_REF:%s; creating new DbXRef", accession));
+            dbXRef = new DbXRef(GOREF_DB, accession);
+            generalDao.persist(dbXRef);         
+        } 
+        return dbXRef;
+    }
+    
+    
+    /**
+     * Create or lookup a Interpro dbxref
+     * 
+     *
+     * @param ref the reference
+     * @return the Dbxref object
+     */
+    public DbXRef findOrCreateDbXRefForWithFrom(String ref) {
+    	if(!ref.startsWith("InterPro:") && !ref.startsWith("Pfam:"))
+    		return null;
+    	
+    	Db db = (ref.startsWith("InterPro:") ? INTERPRO_DB : PFAM_DB);
+        String accession = ref.substring(1 + ref.indexOf(':')); // Text after first colon, or whole string if no colon
+        logger.trace(String.format("Looking for dbxref object with accession number '%s'", accession));
+        DbXRef dbXRef = generalDao.getDbXRefByDbAndAcc(db, accession);
         if (dbXRef == null) {
             logger.trace(String.format("Could not find DbXRef for GO_REF:%s; creating new DbXRef", accession));
             dbXRef = new DbXRef(GOREF_DB, accession);
