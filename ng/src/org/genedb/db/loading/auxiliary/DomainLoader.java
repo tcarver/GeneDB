@@ -233,9 +233,13 @@ public class DomainLoader extends Loader {
 
                 logger.info(String.format("Creating %s GO term '%s' for domain '%s'",
                     comment, goInstance.getId(), polypeptideDomain.getUniqueName()));
+ 
+                DbXRef withFrom = null;
+                if(goInstance.getWithFrom() != null)
+                  withFrom = featureUtils.findOrCreateDbXRefForWithFrom(goInstance.getWithFrom());
 
                 featureUtils.createGoEntries(polypeptide, goInstance,
-                    comment, (DbXRef) null);
+                    comment, withFrom);
             } catch (ParsingException e) {
                 logger.error(e);
             }
